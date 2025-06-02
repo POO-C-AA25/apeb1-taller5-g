@@ -35,6 +35,9 @@ class Resultado {
     double puntaje;
     boolean superado;
 
+    public Resultado() {
+    }
+
     public Resultado(String nombrePrueba, double puntaje, double umbralSuperacion) {
         this.nombrePrueba = nombrePrueba;
         this.puntaje = puntaje;
@@ -48,6 +51,9 @@ class Participante {
     int id;
     boolean asistencia;
     ArrayList<Resultado> resultados;
+
+    public Participante() {
+    }
 
     public Participante(String nombre, int id) {
         this.nombre = nombre;
@@ -88,6 +94,9 @@ class Participante {
 
 class Disciplina {
 
+    public Disciplina() {
+    }
+
     String nombre;
     ArrayList<Participante> participantes;
 
@@ -126,6 +135,9 @@ class Disciplina {
 }
 
 class EventoDeportivo {
+
+    public EventoDeportivo() {
+    }
 
     String nombreEvento;
     ArrayList<Disciplina> disciplinas;

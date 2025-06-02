@@ -33,6 +33,9 @@ class Plato {
     private int cantidadVendida;
     private double precio;
 
+    public Plato() {
+    }
+
     public Plato(String nombre, String[] ingredientes, int cantidadDisponible, double precio) {
         this.nombre = nombre;
         this.ingredientes = ingredientes;
@@ -81,6 +84,9 @@ class Expositor {
     private String nombre;
     private Plato[] platos;
     private int numPlatos; // para controlar cuántos platos hay
+
+    public Expositor() {
+    }
 
     public Expositor(String nombre, int maxPlatos) {
         this.nombre = nombre;
@@ -131,6 +137,9 @@ class Festival {
 
     private Expositor[] expositores;
     private int numExpositores;
+
+    public Festival() {
+    }
 
     public Festival(int maxExpositores) {
         expositores = new Expositor[maxExpositores];

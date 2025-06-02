@@ -42,6 +42,9 @@ class PersonaImplicada {
     double danoEconomico;
     double sentencia;
 
+    public PersonaImplicada() {
+    }
+
     public PersonaImplicada(String nombre, int edad, String ocupacion, String nivelImplicacion) {
         this.nombre = nombre;
         this.edad = edad;
@@ -62,6 +65,9 @@ class CasoCorrupcion {
     String estado; // "Iniciado", "Alerta", "Urgente"
     PersonaImplicada[] personas;
     int numPersonas;
+
+    public CasoCorrupcion() {
+    }
 
     public CasoCorrupcion(String nombreCaso, int dia, int mes, int anio) {
         this.nombreCaso = nombreCaso;

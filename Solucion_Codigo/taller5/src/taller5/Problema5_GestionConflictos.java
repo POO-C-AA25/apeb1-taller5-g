@@ -36,6 +36,9 @@ class Evento {
     double porcentajeBajasPais; // 0 si no aplica
     String paisAfectado;
 
+    public Evento() {
+    }
+
     public Evento(String nombre, int dia, int mes, int anio, String ubicacion, String descripcion,
             String tipoEvento, boolean usaArmasNucleares, double porcentajeBajasPais, String paisAfectado) {
         this.nombre = nombre;
@@ -81,6 +84,9 @@ class ConflictoInternacional {
 
     static final int TOTAL_PAISES_MUNDO = 195;
     static final String[] PAISES_PRIMER_MUNDO = {"EEUU", "Canadá", "Reino Unido", "Alemania", "Francia", "Japón", "Australia"}; // ejemplo
+
+    public ConflictoInternacional() {
+    }
 
     public ConflictoInternacional(String nombre, String[] paises, int dia, int mes, int anio) {
         this.nombre = nombre;

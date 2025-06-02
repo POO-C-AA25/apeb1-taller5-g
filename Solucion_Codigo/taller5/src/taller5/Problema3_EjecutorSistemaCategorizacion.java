@@ -46,6 +46,9 @@ class Empresa {
     private String direccion;
     private Departamento[] departamentos;
 
+    public Empresa() {
+    }
+
     public Empresa(String nombre, String ruc, String direccion, Departamento[] departamentos) {
         this.nombre = nombre;
         this.ruc = ruc;
@@ -84,6 +87,9 @@ class Departamento {
     private int numEmpleados;
     private double produccionAnual;
     private char categoria;
+
+    public Departamento() {
+    }
 
     public Departamento(String nombre, int numEmpleados, double produccionAnual) {
         this.nombre = nombre;
