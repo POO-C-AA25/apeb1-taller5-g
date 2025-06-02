@@ -1,3 +1,4 @@
+
 public class Problema1_EjecutorCarritoCompras {
 
     public static void main(String[] args) {
@@ -24,9 +25,9 @@ class Producto {
 
     public String nombre;
     public double precio;
-    public double cantidad;
+    public int cantidad;
 
-    public Producto(String nombre, double precio, double cantidad) {
+    public Producto(String nombre, double precio, int cantidad) {
         this.nombre = nombre;
         this.precio = precio;
         this.cantidad = cantidad;
@@ -40,7 +41,7 @@ class Producto {
         return precio;
     }
 
-    public double getCantidad() {
+    public int getCantidad() {
         return cantidad;
     }
 
@@ -52,7 +53,7 @@ class Producto {
         this.precio = precio;
     }
 
-    public void setCantidad(double cantidad) {
+    public void setCantidad(int cantidad) {
         this.cantidad = cantidad;
     }
 
@@ -73,6 +74,9 @@ class CarritoDeCompras {
     public double efectivo;
     public double montoFactuta;
     public double descuento;
+
+    public CarritoDeCompras() {
+    }
 
     public CarritoDeCompras(Producto[] productos, double efectivo) {
         this.productos = productos;

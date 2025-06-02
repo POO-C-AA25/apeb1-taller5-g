@@ -1,5 +1,6 @@
 
 import java.util.Scanner;
+
 public class Problema2_EjecutorSistemaCalificaciones {
 
     public static void main(String[] args) {
